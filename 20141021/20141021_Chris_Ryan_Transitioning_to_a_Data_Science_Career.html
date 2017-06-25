@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<!-- File edited by David Prager Branner, 20141022, to remove service-related links extraneous to slide content; but copyright notice retained and site of original slide presentation added to footer. -->
+<html style="" class="decks show  mz-js mz-no-touch mz-history mz-rgba mz-backgroundsize mz-opacity mz-cssanimations mz-csstransforms mz-csstransforms3d mz-csstransitions mz-localstorage mz-applicationcache mz-svg mz-fullscreen loaded" data-account="free"><script id="bug.surrogate.29">var gapi={plusone:{render:function(){},go:function(){}}};</script><script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/plusone.js" async="" type="text/javascript"></script><script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/widgets.js" id="twitter-wjs"></script><script id="bug.surrogate.20">FB={api:function(){},ui:function(){},Event:{subscribe:function(){}},UIServer:{},XFBML:{parse:function(){}},init:function(){},__noSuchMethod__:function(){}};</script><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/all.js" id="facebook-jssdk"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"beacon-5.newrelic.com","errorBeacon":"bam.nr-data.net","licenseKey":"4fd2e9786b","applicationID":"1563900","transactionName":"cApZREQKWl9XFxZQVlAORB9FDVlE","queueTime":0,"applicationTime":906,"ttGuid":"","agentToken":null,"agent":"js-agent.newrelic.com/nr-476.min.js"}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o?o:e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(t){function e(e,n,a){t&&t(e,n,a),a||(a={});for(var c=u(e),f=c.length,s=i(a,o,r),p=0;f>p;p++)c[p].apply(s,n);return s}function a(t,e){f[t]=u(t).concat(e)}function u(t){return f[t]||[]}function c(){return n(e)}var f={};return{on:a,emit:e,create:c,listeners:u,_events:f}}function r(){return{}}var o="nr@context",i=t("gos");e.exports=n()},{gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],D5DuLP:[function(t,e){function n(t,e,n){return r.listeners(t).length?r.emit(t,e,n):(o[t]||(o[t]=[]),void o[t].push(e))}var r=t("ee").create(),o={};e.exports=n,n.ee=r,r.q=o},{ee:"QJf3ax"}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],G9z0Bl:[function(t,e){function n(){var t=l.info=NREUM.info;if(t&&t.agent&&t.licenseKey&&t.applicationID&&c&&c.body){l.proto="https"===p.split(":")[0]||t.sslForHttp?"https://":"http://",a("mark",["onload",i()]);var e=c.createElement("script");e.src=l.proto+t.agent,c.body.appendChild(e)}}function r(){"complete"===c.readyState&&o()}function o(){a("mark",["domContent",i()])}function i(){return(new Date).getTime()}var a=t("handle"),u=window,c=u.document,f="addEventListener",s="attachEvent",p=(""+location).split("?")[0],l=e.exports={offset:i(),origin:p,features:{}};c[f]?(c[f]("DOMContentLoaded",o,!1),u[f]("load",n,!1)):(c[s]("onreadystatechange",r),u[s]("onload",n)),a("mark",["firstbyte",i()])},{handle:"D5DuLP"}]},{},["G9z0Bl"]);</script>
+
+    <title>datarave_oct21 by Chris Ryan</title>
+    <meta name="description" content="A presentation created with Slides.">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta property="og:title" content="datarave_oct21 by Chris Ryan">
+    <meta property="og:site_name" content="Slides">
+    <meta property="og:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/cjryan/b943a8/datarave_oct21.jpg">
+    <meta property="og:type" content="presentation">
+    <meta property="og:url" content="http://slides.com/cjryan/datarave_oct21">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+      <link href="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/css.css" rel="stylesheet" type="text/css">
+
+    <link href="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/slides-6679eab2201ca837634c1840f1cd3887.css" media="all" rel="stylesheet" type="text/css">
+    <link href="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/application-0efa1e0f866bb260c2dd28bd8f6fb3d2.css" media="all" rel="stylesheet" type="text/css">
+    <script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/modernizr-811daed07a17f831d04c27f90dcf22dd.js" type="text/javascript"></script>
+    <meta content="authenticity_token" name="csrf-param">
+<meta content="KPpDKx9pgX24j8mOdysMP8tYy7V8PyQ2R4lIWZ+qJXk=" name="csrf-token">
+    <script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39670045-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <script>
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/f7sH7NavrjjvuGxByaw.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+UserVoice.push(['set', {
+  accent_color: '#448dd6',
+  trigger_color: 'white',
+  trigger_background_color: 'rgba(46, 49, 51, 0.6)',
+  position: 'automatic'
+}]);
+
+</script>
+
+<!--
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@SlidesApp">
+	<meta name="twitter:title" content="datarave_oct21">
+	<meta name="twitter:description" content="An interactive presentation created with Slides.">
+	<meta name="twitter:image" content="https://s3.amazonaws.com/media-p.slid.es/thumbnails/cjryan/b943a8/datarave_oct21.jpg">
+	-->
+
+	<link href="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/deck-v2-c50e37a56f7b7a09ac56ec616829b248.css" media="all" rel="stylesheet" type="text/css">
+
+
+<style id="user-css-output" type="text/css"></style>
+
+  <style type="text/css"></style><style>@-webkit-keyframes popkxartscjpwcvwoqgpfocilmstjkdszmulaqq {50% {-webkit-transform:scale(1.2);}100% {-webkit-transform:scale(1);}}@keyframes popkxartscjpwcvwoqgpfocilmstjkdszmulaqq {50% {-webkit-transform:scale(1.2);transform:scale(1.2);}100% {-webkit-transform:scale(1);transform:scale(1);}}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:solid 2px #fff !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-moz-border-radius:5px !important;border-radius:5px !important;-moz-box-shadow:0px 0px 20px #000 !important;box-shadow:0px 0px 20px #000 !important;}.kxartscjpwcvwoqgpfocilmstjkdszmulaqq-blocked{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;color:#AAA !important;display:inline !important;text-decoration:line-through !important;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq br{display:block !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq span{background:transparent !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq div{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq a{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}a#kxartscjpwcvwoqgpfocilmstjkdszmulaqq-gear{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;text-decoration:none !important;position:absolute !important;display:none !important;font-size:20px !important;width:20px !important;height:20px !important;line-height:20px !important;text-align:center !important;background-color:rgba(255,255,255,.8) !important;background-image:url(resource://firefox-at-ghostery-dot-com/ghostery/data/images/gear.svg) !important;background-size:16px 16px !important;background-position:center center !important;background-repeat:no-repeat !important;text-decoration:none !important;}a#kxartscjpwcvwoqgpfocilmstjkdszmulaqq-gear:hover{-webkit-animation-name:popkxartscjpwcvwoqgpfocilmstjkdszmulaqq !important;animation-name:popkxartscjpwcvwoqgpfocilmstjkdszmulaqq !important;-webkit-animation-duration:0.3s !important;animation-duration:0.3s !important;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq:hover #kxartscjpwcvwoqgpfocilmstjkdszmulaqq-gear{text-decoration:none !important;display:inline-block !important;}#kxartscjpwcvwoqgpfocilmstjkdszmulaqq hr{visibility:hidden !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;position:static;height:1em;}@media print{#kxartscjpwcvwoqgpfocilmstjkdszmulaqq{display:none !important;}}</style><style></style><script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/embed.js" async="" type="text/javascript"></script></head>
+  <body>
+    <div id="container" class="container">
+      
+<!--
+<header class="global-header show-on-scroll extra-wide">
+  <div class="wrapper">
+    <h1 class="logo-animation open">
+      <a class="symbol" href="http://slides.com/">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+      </a>
+      <a class="word" href="http://slides.com/"></a>
+    </h1>
+    <ul class="nav">
+      <li data-page-id="home/explore"><a href="http://slides.com/explore" class="page-link hide-in-editor">Explore</a></li>
+      <li data-page-id="static/features"><a href="http://slides.com/features" class="page-link hide-in-editor">Features</a></li>
+      <li data-page-id="static/pricing"><a href="http://slides.com/pricing" class="page-link hide-in-editor">Pricing</a></li>
+
+
+        <li>
+          <div class="sign-in dropdown">
+            <a class="dropdown-button grey page-link" href="http://slides.com/users/sign_in">
+              Sign in
+            </a>
+
+            <div class="dropdown-list">
+              <ul class="dropdown-list-inner">
+                <li>
+                  <a class="button grey" href="http://slides.com/pricing">
+                    Create an account
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+
+    </ul>
+  </div>
+</header>
+-->
+
+      <div id="main" class="main" role="main">
+        
+
+
+
+<div class="marquee loading">
+
+	<div class="reveal-frame">
+		<div class="reveal-viewport theme-font-montserrat theme-color-sand-blue">
+			<div data-background-transition="slide" data-transition-speed="default" role="application" class="reveal slide">
+				<div style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(1);" class="slides">
+					<section style="display: block;" class="present" data-id="ef6ba0cb06331c39f016d19c7a40e5a4"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;" data-block-id="a23dfa2ceaabd1f68521e521137fd2a5"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Transitioning to a data science career</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="9986cee2a0f1c2edb601c69c093866f9" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 471px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Chris Ryan</p>
+
+<p>data scientist, Harmony Institute</p>
+
+<p>Oct 21st 2014</p>
+
+<p>Data Rave Meetup&nbsp;</p>
+</div></div></section><section style="display: block;" class="future" aria-hidden="true" data-id="87592289a89fc917b530ef4025971d3e" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 47px; height: auto;" data-block-id="5accc5224aa9b7de28e349919df37496"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Your speaker</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 577px; left: 0px; top: 210px; height: auto;" data-block-id="2b1010aa2522c87e22750e946ff81bb3"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>PhD in biophysics from UC Berkeley</li>
+	<li>3 months in Hacker School after PhD</li>
+	<li>data scientist at Harmony Institute</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ef4616ad7e6449f010a9e35deb2ecbd9" style="min-width: 30px; min-height: 30px; width: 305.25px; height: 407px; left: 603px; top: 153px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/me.jpg" data-natural-width="453" data-natural-height="604" style="visibility: visible;"></div></div></section><section style="display: block;" class="future" aria-hidden="true" data-id="4085447b21850e6f68b26d092819481d" hidden=""><div class="sl-block" data-block-type="text" style="width: 842px; left: 92px; top: 78px; height: auto;" data-block-id="6a411d34d12fe21e0a2ce3a997626da2"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<p><span style="font-size:48px">With advice from&nbsp;data scientists at...</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c43906f231b15cf89a7e08cf27255de6" style="min-width: 30px; min-height: 30px; width: 303.525px; height: 71px; left: 548px; top: 490px;"><div class="sl-block-content" style="z-index: 12;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/logo-index.png" data-natural-width="171" data-natural-height="40" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="dbdb638d9b98a3f9e6d6e58549844218" style="min-width: 30px; min-height: 30px; width: 330.434782608696px; height: 76px; left: 121.565217391304px; top: 484px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/logo-pivotal.png" data-natural-width="600" data-natural-height="138" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="be32fdb3894294e37d7860df999041ba" style="min-width: 30px; min-height: 30px; width: 360px; height: 88.135593220339px; left: 300px; top: 286px;"><div class="sl-block-content" style="z-index: 14;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/logo-tapad.png" data-natural-width="531" data-natural-height="130" style="visibility: visible;"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="327d5dc3b0db823bef48ddc58a8faf17" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 70px; height: auto;" data-block-id="3780c03a24931623c8228828ffa1dab2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>The talk</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 167px; height: auto;" data-block-id="c135df54b4164124ab16507aa2097f10"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<p style="text-align:left">Goals</p>
+
+<ul>
+	<li>make your transition to data science <strong>more direct</strong> than mine</li>
+	<li>
+<strong>enumerate</strong> as many good resources as possible</li>
+	<li>
+<strong>prioritize</strong> the ways you can prepare</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p style="text-align:left">Outline</p>
+
+<ul>
+	<li style="text-align:left">pros &amp; cons of going for a&nbsp;PhD</li>
+	<li style="text-align:left">ways to learn data science (in-person&nbsp;courses, online courses,&nbsp;books, etc)</li>
+	<li style="text-align:left">personal projects</li>
+	<li style="text-align:left">interviews (resources, my experiences, thoughts)</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="e0b888f863ae2e0f192176ba87423711" hidden=""><div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 832px; height: 675.202885482417px; left: 80px; top: 0px;" data-block-id="8d966e4f6d8859d6071a307e265b6816"><div class="sl-block-content" style="z-index: 11;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/RoadToDataScientist1.png" style="visibility: visible;" data-natural-width="1109" data-natural-height="900"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="74842ee2bb90954aa45ad76c9c662995" style="height: auto; min-width: 30px; min-height: 30px; width: 540px; left: 80px; top: 0px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; color: rgb(255, 255, 255);">
+<p>A data scientist <strong>aspires</strong> to be all this...</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f635c6928c1eae65613d2556e523fe06" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 661px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:20px">"Becoming a Data Scientist – Curriculum via Metromap",&nbsp;Swami Chandrasekaran,&nbsp;nirvacana.com</span></p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" hidden=""><div class="sl-block" data-block-type="image" data-block-id="5a0c5cc10975cb280be421aa5d4dcfa2" style="min-width: 30px; min-height: 30px; width: 633.484162895928px; height: 600px; left: 152px; top: 39px;"><div class="sl-block-content" style="z-index: 11;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/types_of_datascientist.png" data-natural-width="700" data-natural-height="663" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="5f8ade86b36368b227088fe6c30774f1" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 168px; top: 0px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Types of data scientist</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="688b462e9efc686d5bb025c2389fb1bb" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 661px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><span style="font-size:24px"><span style="color:rgb(64, 64, 64); text-align:justify">&nbsp;“Analyzing the Analyzers” by Harris, Murphy, and Vaisman, 2013</span></span></p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="17930aaae833f3d82281dbaf167361b1" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 65px; top: 70px; height: auto;" data-block-id="9866c056fa713c2a77efca5d989d09db"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Getting a PhD</h2>
+
+<p>my research</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 297.040358744395px; left: 600px; top: 224px;" data-block-id="3c7649e167848d157762bc7208e6e03a"><div class="sl-block-content" style="z-index: 11;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/vesiculation2.png" style="visibility: visible;" data-natural-width="669" data-natural-height="552"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 273.176470588235px; left: 0px; top: 236px;" data-block-id="edcc14bf9240ec862942890b99d31137"><div class="sl-block-content" style="z-index: 16;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/thylakoid_grana.png" style="visibility: visible;" data-natural-width="680" data-natural-height="516"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 377px; left: 583px; top: 521px;" data-block-id="4a488811b8eae33e79edb366b19af21a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>organization</p>
+
+<p>(in a computer simulation)</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 377px; left: 0px; top: 521px;" data-block-id="0fcd955e59f5b9798d7a4ba1240917bb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>organization</p>
+
+<p>(in a plant cell)</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 284px; height: 89.5414012738854px; left: 367px; top: 313px;" data-block-id="37c70198c745672f0feceffc4b839f15"><div class="sl-block-content" style="z-index: 15;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/right_arrow.png" style="visibility: visible;" data-natural-width="314" data-natural-height="99"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="b17ac2a5dd37c1de7866d6846e4300f5" hidden="">
+<div class="sl-block" data-block-type="text" style="width: 365px; left: 298px; top: 0px; height: auto;" data-block-id="86a3eaf2e69ca1b500ad5ab506e14e28"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<p><strong><span style="font-size:24px">Getting a PhD --&nbsp;my research</span></strong></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="51ee28beb041986992ea51e215c27a3b" style="min-width: 30px; min-height: 30px; width: 960px; height: 595.068493150685px; left: 0px; top: 76px;"><div class="sl-block-content" style="z-index: 12;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/phd_research_flowchart_simpler.png" style="visibility: visible;" data-natural-width="876" data-natural-height="543"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="9930c8f05beded421abcbf6600b3ccce" hidden=""><div class="sl-block" data-block-type="text" style="width: 560px; left: 0px; top: 180px; height: auto;" data-block-id="6d757be2ca15cbd8e9dbdc80f37e2a2d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<p style="text-align:left">Technical skills developed...</p>
+
+<ul>
+	<li>
+<span style="color:rgb(17, 17, 17); text-align:left">via research</span>
+
+	<ul>
+		<li>Writing computer simulations in C++</li>
+		<li>Running batches of simulations on supercomputers</li>
+		<li>Analyzing data in Python</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 64px; top: 18px; height: auto;" data-block-id="92f3cf3d44b1377eb263850e4ced1a65"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2>Getting a PhD</h2>
+
+<p>my research</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 383.556638246041px; height: 268px; left: 576.443361753959px; top: 209px;" data-block-id="36f9df24d3a18a190a545ce56251526b"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/tubule_relax.png" style="visibility: visible;" data-natural-width="1175" data-natural-height="821"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 784px; left: 0px; top: 475px; height: auto;" data-block-id="2f7c414610225b6762c73602c977e222"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>&nbsp;</p>
+
+<ul>
+	<li>&nbsp;via coursework:
+	<ul>
+		<li>machine learning theory -- overkill!&nbsp;(part 1)</li>
+		<li>parallel computing (circa 2009)<span style="color:rgb(17, 17, 17); text-align:left">&nbsp;-- overkill!</span><span style="color:rgb(17, 17, 17); text-align:left">&nbsp;(part 2)</span>
+</li>
+		<li>statistics, misc</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="74edddacf645ff23460ed13ecbcef1f9" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 69px; top: 80px; height: auto;" data-block-id="a401a5ee69b865f0f5ecfaba9dbbfc28"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;"><h2>Getting a PhD</h2></div></div>
+<div class="sl-block" data-block-type="text" style="width: 600px; left: 0px; top: 218px; height: auto;" data-block-id="ced71ebbef094886824705b79c7ae779"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Great things:
+	<ul>
+		<li>investigate a topic deeply&nbsp;(relentlessly?) for ~5+ years</li>
+		<li>constant technical communication, typically inter(sub)disciplinary</li>
+		<li>self-direction</li>
+	</ul>
+	</li>
+	<li>Differences from the "real world"
+	<ul>
+		<li>few deadlines&nbsp;(regarding project completion)</li>
+		<li>can be disconnected from programming "best practices"</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="11ed088bac3da5aa8eee1452e06ebfe7" style="min-width: 30px; min-height: 30px; width: 280px; height: 420px; left: 680px; top: 164px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/UCB-campanile.jpg" style="visibility: visible;" data-natural-width="600" data-natural-height="900"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="230b3335a369421e43b56325588d8520" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="9988092320c82a307ad5447ecce6a808"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Post-PhD</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 195px; height: auto;" data-block-id="0ccc2d000c26926eb1d51e6ecef7320b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<p style="text-align:left">What I still needed to know:</p>
+
+<ul>
+	<li>Web-related skills
+	<ul>
+		<li>getting data from, e.g., an&nbsp;API</li>
+		<li>anything about how computers communicate</li>
+	</ul>
+	</li>
+	<li>Programming best practices
+	<ul>
+		<li>writing idiomatic Python</li>
+		<li>Git usage beyond keeping backups (forking, merging, rebasing, etc)</li>
+	</ul>
+	</li>
+	<li>Data visualization
+	<ul>
+		<li>the state-of-the-art in general</li>
+		<li>D3.js and other modern tools</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="27067e4b8d50d27d7c120a33b26e2deb" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 73px; top: 70px; height: auto;" data-block-id="ebbaa0a67df877a4eb6e1ea55f56414a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>From ____ to data science</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 37px; top: 198px; height: auto;" data-block-id="addb5129e9f3aedb299f4af5bcd0c928"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>Educational programs, in person
+	<ul>
+		<li>"bootcamps" (6 to 12 weeks)</li>
+		<li>masters degrees (1 to 2 years)</li>
+	</ul>
+	</li>
+	<li>Internships</li>
+	<li>Self study
+	<ul>
+		<li>Online resources (e.g.,&nbsp;<span style="color:rgb(17, 17, 17); text-align:left">Coursera, video</span>&nbsp;talks)</li>
+		<li>Books</li>
+	</ul>
+	</li>
+	<li>Personal sabbatical
+	<ul>
+		<li>
+<strong>Hacker School</strong>&nbsp;(3 months, full time)</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="b738e4634918b50cbec5988c540cd091" hidden=""><div class="sl-block" data-block-type="text" style="width: 880px; left: 33px; top: 0px; height: auto;" data-block-id="0344a20e240d9566203bb28db6f1499f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>In-person</h2>
+
+<h2>data science curricula</h2>
+
+<p><em>(my thoughts and advice)</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 67px; top: 226px; height: auto;" data-block-id="2ba80a5bd5fa16b0e4a2c7d341d51cea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li style="color:rgb(17, 17, 17)">please get lots of advice &amp; read blogs (e.g., <a href="http://datascopeanalytics.com/what-we-think/2014/08/04/how-do-i-become-a-data-scientist-an-evaluation-of-3-alternatives" target="_blank">1</a>, <a href="http://yet-another-data-blog.blogspot.com/2014/04/data-science-bootcamp-landscape-full.html" target="_blank">2</a>)!</li>
+	<li style="color:rgb(17, 17, 17)">bootcamps: full-time &amp; intensive
+	<ul>
+		<li style="color:rgb(17, 17, 17)">Ones for STEM-PhDs are shorter (<a href="http://insightdatascience.com/" target="_blank">Insight DS</a>&nbsp;&amp;&nbsp;<a href="http://www.thedataincubator.com/" target="_blank">Data Incubator</a>)</li>
+		<li>Targeted skill development + a "capstone project"</li>
+		<li>might have mentors from big industry places</li>
+	</ul>
+	</li>
+	<li>bootcamps: part time
+	<ul>
+		<li><a href="http://generalassemb.ly/education/data-science" target="_blank">General Assembly</a></li>
+	</ul>
+	</li>
+	<li>Masters degrees from universities
+	<ul>
+		<li><a href="http://www.mastersindatascience.org/" target="_blank">mastersindatascience.org</a></li>
+		<li>e.g.,&nbsp;<a href="http://cds.nyu.edu/academics/ms-in-data-science/" target="_blank">NYU</a>,&nbsp;<a href="http://idse.columbia.edu/masters" target="_blank">Columbia</a>
+</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="d0433b9838c1c7592b39be55b610c0e3" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="5175d85fd1ed2de24b98d342a2345f03"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Online</h2>
+
+<h2>data science curricula</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 871px; left: 82px; top: 188px; height: auto;" data-block-id="27316a717a0f2d184758792bc7e19333"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Online, mostly free
+	<ul>
+		<li>
+<a href="http://datasciencemasters.org/" target="_blank">datasciencemasters.org</a>&nbsp;(set of resources compiled by Clare Corthell -- comprehensive in&nbsp;scope)</li>
+		<li>
+<a href="https://www.coursera.org/specialization/jhudatascience/" target="_blank">John Hopkins DS "specialization"&nbsp;via Coursera</a>&nbsp;(<span style="color:rgb(17, 17, 17); text-align:left">materials are free,&nbsp;</span>~$500 for certificate, etc)</li>
+	</ul>
+	</li>
+	<li style="color:rgb(17, 17, 17)">Online, with fees
+	<ul>
+		<li>
+<a href="http://datascience.berkeley.edu/" target="_blank">Berkeley DS masters degree</a> (~$10^4)</li>
+		<li>several others</li>
+	</ul>
+	</li>
+	<li>Little-to-no statistics or linear algebra background may be 
+required, but willingness to learn could be important (see 
+respective&nbsp;FAQs &amp; info)</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="5ddf67e833d43433dbce4a684b66ee5f" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 87px; top: 78px; height: auto;" data-block-id="3ba2a05ceae0f3cd84eb32d11ba41445"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Internships</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 210px; height: auto;" data-block-id="c61ec7293bb430ff08f472582768652e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>mostly for STEM students, but not always</li>
+	<li>can be found on job posting sites (e.g., LinkedIn)</li>
+	<li>can avoid the financial &amp; time obstacles if available</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="1897ee069a83fde2b362713e5ce8430d" hidden=""><div class="sl-block" data-block-type="text" style="width: 739px; left: 0px; top: 257px; height: auto;" data-block-id="8002f3cd81c6700965b1694f78b56916"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>
+	<p>"<strong>Doing Data Science</strong>" by Cathy O'Neil &amp; Rachel Schutt</p>
+
+	<ul>
+		<li>
+		<p>real-world data science/analysis techniques</p>
+		</li>
+		<li>
+		<p>some experience with programming, basic stats &amp; linear algebra helps, but not required</p>
+		</li>
+		<li>
+		<p>essentially lecture notes processed in book chapters w/ plenty of references</p>
+		</li>
+		<li>
+		<p>very readable, &amp; covers just about all the bases</p>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 82px; top: 0px; height: auto;" data-block-id="65c31a90f7ed698903d1240b70a915fe"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">books</span></em></h2>
+
+<h2>Data Science, in practice</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="fbf5d4777a73ba2a11518ef94ccced47" style="min-width: 30px; min-height: 30px; width: 200px; height: 300px; left: 760px; top: 227px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/books-oneil_schutt.jpg" style="visibility: visible;" data-natural-width="500" data-natural-height="750"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="ed913237adc2886a2e5d5744a459d7e3" hidden=""><div class="sl-block" data-block-type="text" style="width: 576px; left: 0px; top: 187px; height: auto;" data-block-id="7ae3f296c8c14e35f37d3a673b3a86ea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>
+	<p>"<strong>Thinking with Data</strong>" by Max Shron</p>
+
+	<ul>
+		<li>
+		<p>real-world data analysis, beyond programming &amp; stats</p>
+		</li>
+		<li>
+		<p>how to:</p>
+
+		<ul>
+			<li>
+			<p>understand what a company really needs from its data</p>
+			</li>
+			<li>
+			<p>scope a project &amp; minimize unproductive detours</p>
+			</li>
+		</ul>
+		</li>
+		<li>
+		<p>Author has read &amp; processed lots of thought from consulting, psychology, management, etc (so you don't have to)</p>
+		</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 82px; top: 0px; height: auto;" data-block-id="4d6f4121e36ce10a70e95574e8718d4e"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">books</span></em></h2>
+
+<h2>Data Science, in practice</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="fb13f8642633af2932f4b4d941a0b98f" style="min-width: 30px; min-height: 30px; width: 286.666666666667px; height: 430px; left: 657px; top: 205px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/books-shron.jpg" style="visibility: visible;" data-natural-width="500" data-natural-height="750"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="8289778785dbc9c4a520f5397ec0962f" hidden=""><div class="sl-block" data-block-type="text" style="width: 759px; left: 101px; top: 251px; height: auto;" data-block-id="8ad38879d37f99fbf1559f552d521126"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>
+	<p><span style="color:rgb(34, 34, 34); text-align:left">"Python for Data Analysis" by Wes&nbsp;McKinney</span></p>
+	</li>
+	<li>
+	<p><span style="color:rgb(34, 34, 34); text-align:left">"Data Science for Business" by Provost &amp; Fawcett</span></p>
+	</li>
+	<li>
+	<p><span style="color:rgb(34, 34, 34); text-align:left">"Building Machine Learning Systems with Python" by Richert &amp; Coelho</span></p>
+	</li>
+	<li>
+	<p><span style="color:rgb(34, 34, 34); text-align:left">"Think Bayes" by Allen Downey (free, along with his other books, from&nbsp;</span><a href="http://greenteapress.com/" target="_blank">greenteapress.com</a><span style="color:rgb(34, 34, 34); text-align:left">).</span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 880px; left: 80px; top: 0px; height: auto;" data-block-id="5dae3abda5ed339a82ff53b5d061fa28"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">books</span></em></h2>
+
+<h2>Book recommendations</h2>
+
+<p><em>from others</em></p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="541afa15b0372d38b7614d44504bd445" hidden=""><div class="sl-block" data-block-type="text" style="width: 600px; left: 0px; top: 204px; height: auto;" data-block-id="d6efa622068863e73b558d8b6aae925b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>
+	<p>course by Andrew Ng</p>
+	</li>
+	<li>
+	<p>loved by everybody (that is, many working data scientists &amp; others)</p>
+	</li>
+	<li>
+	<p>topics:</p>
+
+	<ul>
+		<li>
+		<p>regression</p>
+		</li>
+		<li>
+		<p>neural networks</p>
+		</li>
+		<li>
+		<p>support vector machines</p>
+		</li>
+		<li>
+		<p>clustering</p>
+		</li>
+		<li>
+		<p>dimensionality reduction (PCA, etc)</p>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p>additionally,&nbsp;<a href="http://scikit-learn.org/stable/tutorial/" target="_blank">scikit-learn tutorials</a> are really good on their own</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 915px; left: 29px; top: 0px; height: auto;" data-block-id="db6934a4dffb90347c25a5448e1c15a3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">online instruction</span></em></h2>
+
+<h2>Machine learning (Coursera)</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="be6b3de4b53ddf1c1026ab87bb112064" style="min-width: 30px; min-height: 30px; width: 360px; height: 202.695652173913px; left: 600px; top: 255px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/coursera-ML_roboperson.png" data-natural-width="460" data-natural-height="259" style="visibility: visible;"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="e343816184f54414344503adb345dfaf" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 79px; height: auto;" data-block-id="b1af43aca5f933a6f6ea7b9e187ff95a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Personal sabbatical</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 73px; top: 223px; height: auto;" data-block-id="f67d40badd6f6c4b656ab73efd925b05"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>2 to 3 months to focus on learning</li>
+	<li>Reasons to do one
+	<ul>
+		<li>you can list things you'd love to learn, and can envision the steps you'd take to do that</li>
+		<li>you want to do projects &amp; explore</li>
+		<li>life is too busy or distracting to do books/Coursera in free time</li>
+		<li>you have a natural transition time in life</li>
+	</ul>
+	</li>
+	<li>Reasons to <em>not</em> do one
+	<ul>
+		<li>personal reasons / responsibilities</li>
+		<li>too expensive</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="3be37a6027b3511a111f01ff951112d2" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 81px; top: 0px; height: auto;" data-block-id="0f45719c7cb68a6e0a465673b1baaefa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2 style="text-align:right"><em><span style="font-size:32px">personal sabbatical</span></em></h2>
+
+<h2>Hacker School</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 604px; left: 9px; top: 159px; height: auto;" data-block-id="955723ff4f80ac0030f5d807060ff93c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left; border-width: 1px;">
+<ul>
+	<li>programming in general &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (not data-specific)</li>
+	<li>~70 hacker schoolers, ~6 facilitators, several&nbsp;"residents"</li>
+	<li>self-directed learning (no curriculum)</li>
+	<li>project-based</li>
+	<li>free for everyone, with grants available&nbsp;for underrepresented groups in programming</li>
+	<li>job placement help afterward</li>
+	<li>many great things have emerged from HS (including Data Rave)</li>
+</ul>
+
+<p><a href="http://www.hackerschool.com/" target="_blank">www.hackerschool.com</a></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 336px; height: 336px; left: 624px; top: 237px;" data-block-id="e58675c269bac7d39f0f3bd63bd8ed94"><div class="sl-block-content" style="z-index: 14;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/hackerschool_photo.jpg" style="visibility: visible;" data-natural-width="612" data-natural-height="612"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="8fb75518e11dd53cefefa68c3a7c5f60" hidden="">
+
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 150.4px; height: 188px; left: 773.6px; top: 257px;" data-block-id="fcc570f711de44e87a6463c7cc0ecb5e"><a class="sl-block-content" style="z-index: 10;" href="https://d29xw0ra2h4o4u.cloudfront.net/assets/logo-no-text-c541e8fe687af4afc7f70bf63381c4a8.png" target="_blank"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/hs_logo.png" data-natural-width="84" data-natural-height="105" style="visibility: visible;"></a></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="fdab583ed62f18f4dee700293953df39"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">personal sabbatical</span></em></h2>
+
+<h2>Hacker School</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 604px; left: 0px; top: 186px; height: auto;" data-block-id="e6a0c5e0010cb4dcb707adc8ce0ab67b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left; border-width: 1px;">
+<ul>
+	<li>Good for people who:
+	<ul>
+		<li>learn well in groups/pairs</li>
+		<li>want exposure to <strong>lots</strong> of things tangentially</li>
+		<li>have a good handle of the data science skills they want to focus on (i.e., can get by without much DS mentorship)</li>
+	</ul>
+	</li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><a href="http://www.hackerschool.com/" target="_blank">www.hackerschool.com</a></p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="1a9da093a0f7242c266a177fb8c8710f" hidden="">
+<div class="sl-block" data-block-type="text" style="width: 600px; left: 0px; top: 269px; height: auto;" data-block-id="d4c24df56f0eba2fca04cc30b3b7f5a1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>modern machine learning / image analysis</li>
+	<li>web app design, asynchronous callback management</li>
+	<li>writing good Python</li>
+	<li>job interview advice&nbsp;&amp; what to expect in the&nbsp;tech world</li>
+	<li>how to cultivate an inclusive, friendly working environment for programmers</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="5190616b2e1df2692a3961c381be29db"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><em><span style="font-size:32px">personal sabbatical</span></em></h2>
+
+<h2>Hacker School</h2>
+
+<p>things I did &amp; learned in general</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 100px; height: 100px; left: 824px; top: 313px;" data-block-id="6774b741ee0e24c8e58a60bb251fa29f"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/logo-python.png" style="visibility: visible;" data-natural-width="650" data-natural-height="650"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 103.06657223796px; height: 99px; left: 640px; top: 314px;" data-block-id="59fdb068834f84c1501097152c0c164d"><div class="sl-block-content" style="z-index: 14;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/projects-eyetracker.png" data-natural-width="735" data-natural-height="706" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a0dc06efdd88dc1f536b4ca826444605" style="min-width: 30px; min-height: 30px; width: 360px; height: 101.339387060159px; left: 600px; top: 484px;"><div class="sl-block-content" style="z-index: 15;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/projects-playlist.png" style="visibility: visible;" data-natural-width="881" data-natural-height="248"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="b322120a290c5471848063a2a4df0018" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 224px; height: auto;" data-block-id="da1b4dd203fcc6ada99360225abd9f6f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10;">
+<ol>
+	<li>Find a data set you find personally interesting</li>
+	<li>Work in an iPython Notebook, make some plots &nbsp; &nbsp; (i.e, <a href="http://en.wikipedia.org/wiki/Exploratory_data_analysis" target="_blank">exploratory data analysis</a>)</li>
+	<li>Explore until you notice something unintuitive [optional: apply a technique you just learned about]</li>
+	<li>Explain your result to a broad audience in&nbsp;a blog post, or at least in a README.md in your GitHub repo</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 94px; top: 0px; height: auto;" data-block-id="a68a66c3f7ced15e84a4e9e21a4a984f"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 12;">
+<h2 style="text-align:right"><span style="font-size:32px"><em>personal projects</em></span></h2>
+
+<h2>Doing small projects</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 671px; left: 151px; top: 535px; height: auto;" data-block-id="a8d3052fd22294f87dd7dfbe1e9d1eae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; border-style: solid; border-width: 2px;">
+<p style="text-align:left">warning: don't try so hard!</p>
+
+<p style="text-align:left">(i.e., don't try to work on 1 thing until it's totally original or very pretty -- too much effort)</p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="60fb4b682ffd4bb3258f8d9fb9687ece" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 94px; top: 0px; height: auto;" data-block-id="8854333bdd2788520eebf21dcb20e2b5"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2 style="text-align: right;"><span style="font-size:32px"><em>personal projects</em></span></h2>
+
+<h2>Finding &amp; exploring data sets</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 62px; top: 241px; height: auto;" data-block-id="b5b3df08e49c08d84d3fd90d03ca7a56"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>
+<a href="http://www.kaggle.com/" target="_blank">Kaggle</a>
+	<ul>
+		<li>
+<span style="color:rgb(17, 17, 17); text-align:left">data sets are very&nbsp;</span>clean (maybe&nbsp;to a fault)</li>
+	</ul>
+	</li>
+	<li>Civic data
+	<ul>
+		<li>
+<a href="http://www.data.gov/" target="_blank">data.gov</a>, <a href="http://nycopendata.socrata.com/" target="_blank">NYC OpenData</a>, many other cities</li>
+		<li>"<a href="http://us-city.census.okfn.org/" target="_blank">US City Open Data Census</a>"</li>
+	</ul>
+	</li>
+	<li>Scrape your own data off the web
+	<ul>
+		<li>e.g., harvest web page HTML &amp; scrape <span style="color:rgb(17, 17, 17); text-align:left">(via, e.g., Python's&nbsp;requests &amp; BeautifulSoup modules)</span>&nbsp;</li>
+		<li>this is a great skill&nbsp;to have!</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="b809efef145710f29e32f2567c45cbe3" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 94px; top: 0px; height: auto;" data-block-id="feda0cca43f5ef0365a306486b5d0f89"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2 style="text-align:right"><span style="font-size:32px"><em>personal projects</em></span></h2>
+
+<h2>Eye tracker</h2>
+
+<p>my personal project, A</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="19921fae6ed722a98a470c48fcf05410" style="height: auto; min-width: 30px; min-height: 30px; width: 710px; left: 146px; top: 661px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><a href="http://github.com/christopherjamesryan/eye-tracker" target="_blank">github.com/christopherjamesryan/eye-tracker</a></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="2e6dc10634536281db8049e5c58d2bae" style="min-width: 30px; min-height: 30px; width: 275.885269121813px; height: 265px; left: 655.114730878187px; top: 266px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/projects-eyetracker.png" data-natural-width="735" data-natural-height="706" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 572px; left: 63px; top: 242px; height: auto;" data-block-id="89e993aa8d198a141386e6d23da7bfeb"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li>
+<u>data set</u>: 1000s of facial images with features annotated</li>
+	<li>
+<u>goal</u>: reproduce&nbsp;a cool new "random forest" method to detect pupils on eye images</li>
+	<li>Not ideal for job search:
+	<ul>
+		<li>no typical data analysis</li>
+		<li>no data munging of, e.g., CSV files</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="3fbb13370e64ef087252cbc99d7ea0be" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 98px; top: 0px; height: auto;" data-block-id="911089db2d17ed3badacbd13f6ded90b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:right"><span style="font-size:32px"><em>personal projects</em></span></h2>
+
+<h2>Demand predictor</h2>
+
+<p>my personal project, B</p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 759px; left: 96px; top: 661px;" data-block-id="037b9689f9cf46887239c06a6d439722"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p><a href="http://github.com/christopherjamesryan/demand-predictor" target="_blank">github.com/christopherjamesryan/demand-predictor</a></p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="8e3f60720ca5c0d0d1b3c12a2be9b6c0" style="min-width: 30px; min-height: 30px; width: 388px; height: 194px; left: 572px; top: 246px;"><div class="sl-block-content" style="z-index: 12;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/projects-demand.png" data-natural-width="864" data-natural-height="432" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="text" style="width: 572px; left: 0px; top: 250px; height: auto;" data-block-id="604224bdba7fb4ec9bf1991f50831f67"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li>
+<u>data set</u>: 100s of login timestamps for a web-based service</li>
+	<li>
+<u>goal 1</u>: predict future demand using login timestamps as proxy</li>
+	<li>
+<u>goal 2</u><span style="color:rgb(17, 17, 17); text-align:left">:&nbsp;</span>write, test, &amp; document a Flask API to get predictions and insert new data</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="b9ef12f4d4afc61ce49a3eedeff63512" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 96px; top: 0px; height: auto;" data-block-id="51b6c75e59975a2bc3f62ecef3725e47"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2 style="text-align:right"><span style="font-size:32px"><em>personal projects</em></span></h2>
+
+<h2>Twitter impact analysis</h2>
+
+<p>my personal project, C</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="90f92da8a007617131087c7bf82e9a55" style="min-width: 30px; min-height: 30px; width: 360px; height: 321.219512195122px; left: 600px; top: 210px;"><div class="sl-block-content" style="z-index: 11;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/projects-doctweets.png" data-natural-width="492" data-natural-height="439" style="visibility: visible;"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 960px; left: 0px; top: 661px;" data-block-id="669149b3d11c4484e9152ff99a42f7b9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p><a href="https://github.com/christopherjamesryan/social-media-impact-analysis/blob/master/analysis.md" target="_blank">github.com/christopherjamesryan/social-media-impact-analysis</a></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 572px; left: 0px; top: 250px; height: auto;" data-block-id="f8e05ad7178eb601f8af3f2d6e084ca2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<ul>
+	<li>
+<u>data set</u>: ~2 years of tweets from a particular twitter account</li>
+	<li>
+<u>goal</u>: analyze the data, determine what creates a high impact tweet</li>
+	<li>visualization was nothing too fancy, and that's okay</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="319f9d6a1c845f5cba7b984960441d75" hidden=""><div class="sl-block" data-block-type="text" style="width: 872px; left: 69px; top: 0px; height: auto;" data-block-id="4c0de8c88e7fd0ccf8af338fc076eb2c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2 style="text-align:right"><span style="font-size:32px"><em>interviews</em></span></h2>
+
+<h2>Interview prep</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 181px; height: auto;" data-block-id="99a14b1cd4f58990b0a0a28d895350b2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>Data scientist interview questions can vary greatly (since positions / company needs vary greatly too)</li>
+	<li>After a phone screen, many good companies will assign a project
+	<ul>
+		<li>it's usually fine if you have no experience in this task,&nbsp;but you might have to learn a lot on the spot</li>
+	</ul>
+	</li>
+	<li>Consider "<a href="http://www.datasciencequestions.com/" target="_blank">120 data science interview questions</a>"
+	<ul>
+		<li>compiled by experienced data scientists</li>
+		<li>many have no answers</li>
+		<li>worth $19? Maybe.</li>
+	</ul>
+	</li>
+	<li>Be as prepared as possible to analyze business challenges regarding the company's product</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="c7e743238e39fb2c5fd7a94503ddc065" hidden=""><div class="sl-block" data-block-type="text" style="width: 872px; left: 68px; top: 0px; height: auto;" data-block-id="86baec1b6b6c61ef8d2d09700c7396bb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2 style="text-align:right"><span style="font-size:32px"><em>interviews</em></span></h2>
+
+<h2>Interview prep</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 198px; height: auto;" data-block-id="62e41abb1191963e118c4414c5ae3ee9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Questions I was asked:
+	<ul>
+		<li>statistics 101 pop quiz</li>
+		<li>comp sci 101 pop quiz ("Cracking the Code Interview" style)</li>
+		<li>day-to-day&nbsp;business analytics</li>
+		<li>"how would you build a recommendation engine for our product?"</li>
+		<li>"explain&nbsp;something technical&nbsp;to me, of your choosing"</li>
+	</ul>
+	</li>
+	<li>Questions I was <em>never</em>&nbsp;asked (but could be common):
+	<ul>
+		<li>Hadoop, other data engineering</li>
+		<li>SQL and NoSQL database queries</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="0db90b668ddd1bc66d81c1f4e3f74262" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 15px; height: auto;" data-block-id="8cbf9138e108ec7864b89e83932f8c4c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Leverage your skills and interests</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 600px; left: 0px; top: 245px; height: auto;" data-block-id="a745968b3053314e8d6086bae64fada1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li style="text-align:left">
+<strong>Domain expertise</strong> is very important for the application of data science</li>
+	<li style="color:rgb(17, 17, 17)"><span style="color:rgb(34, 34, 34); text-align:start">If
+ you have a strong background in some area, practice with problems in 
+that domain first (since you understand the trends &amp; challenges)</span></li>
+	<li style="color:rgb(17, 17, 17)"><span style="color:rgb(34, 34, 34)">If not, pick an area you find interesting &amp; start reading, learning, &amp; identifying interesting problems</span></li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="026af79b641cfd954fc1d32ecaa62cc8" style="min-width: 30px; min-height: 30px; width: 360px; height: 343.636363636364px; left: 600px; top: 238px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/Data_Science_VennDiagram.png" style="visibility: visible;" data-natural-width="528" data-natural-height="504"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="73f503019c146270ccf7df9a44441c3b" style="height: auto; min-width: 30px; min-height: 30px; width: 240px; left: 660px; top: 582px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><span style="font-size:20px"><em>data science Venn diagram</em></span></p>
+
+<p><span style="font-size:20px">Drew Conway</span></p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="54ca1089d956efaa18e08b68bc7cd7b6" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 15px; height: auto;" data-block-id="969d207fc68be5dc09e260227643faab"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Leverage your skills and interests</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 851px; left: 80px; top: 238px; height: auto;" data-block-id="f5e8d5805c30af6e202289437a3c6022"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">My skills&nbsp;<span style="color:rgb(17, 17, 17); text-align:left">[largely&nbsp;covered earlier]</span></p>
+
+<p style="text-align:left">My interests</p>
+
+<ul>
+	<li>working toward a social good</li>
+	<li>investigating <em>and</em>&nbsp;building with data</li>
+	<li>opportunities to learn&nbsp;social network analysis, natural language processing, etc</li>
+	<li>connection to social science</li>
+</ul>
+
+<p style="text-align:left">Keep looking for the position that fits best</p>
+</div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="f41bd9094189de8f351117a4303319e7" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 0px; height: auto;" data-block-id="e3bb6b1df1eb12cf9ab6965dca36a05d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Harmony Institute</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 537px; left: 0px; top: 109px; height: auto;" data-block-id="dafb58d28142a457ef1d3045304d8462"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>nonprofit&nbsp;research center</li>
+	<li style="color:rgb(17, 17, 17)">how does narrative media lead to social change?</li>
+	<li>bringing modern data analysis methods to media makers and the public</li>
+	<li>example: <a href="http://www.storypilot.org/" target="_blank">StoryPilot</a>
+	<ul>
+		<li>a web app / data product for social issue documentaries</li>
+		<li>how can we measure the impact of a documentary?</li>
+		<li>how can we help documentary makers &amp; supporters&nbsp;inspire their audience?</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="2ade740eacc3ee66062691c47f62a7d7" style="min-width: 30px; min-height: 30px; width: 423.383333333333px; height: 285px; left: 537px; top: 296px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/storypilot_postcard.png" data-natural-width="1337" data-natural-height="900" style="visibility: visible;"></div></div></section><section style="display: none;" class="future" aria-hidden="true" data-id="0498661631591fd15066167c359afc70" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 12px; top: 70px; height: auto;" data-block-id="9474ca6f629fe0457e46c978082c0cff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Data Science&nbsp;at&nbsp;</h2>
+
+<p><em>my roles</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 640px; left: 0px; top: 225px; height: auto;" data-block-id="391f5d00cdd11ff68cd3bda989bc850f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li style="text-align:left">Harvest data from publicly accessible APIs (Twitter, Facebook, etc)</li>
+	<li style="text-align:left">Harvest data from sites without APIs via web scraping</li>
+	<li style="text-align:left">Analyze data using natural language processing and social network analysis</li>
+	<li style="text-align:left">Help with unique data visualization</li>
+	<li style="text-align:left">Collaborate with an&nbsp;interdisciplinary team</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="168470eaba01dee4b13c17ce309322a2" style="min-width: 30px; min-height: 30px; width: 210px; height: 210px; left: 640px; top: 2px;"><div class="sl-block-content" style="z-index: 13;"><img src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/HI_circle-02.png" style="visibility: visible;" data-natural-width="900" data-natural-height="900"></div></div></section><section style="display: block;" class="future" aria-hidden="true" data-id="76ce56650643fddb92cde827ce17b699" hidden=""><div class="sl-block" data-block-type="text" style="width: 836px; left: 62px; top: 103px; height: auto;" data-block-id="d037abfc05e731d78a0dc57febd57596"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Following Harmony Institute</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 264px; height: auto;" data-block-id="092c708421159fc3e1c369d536fc7610"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<p>Twitter: <a href="https://twitter.com/HInstitute" target="_blank">@HInstitute</a></p>
+
+<p>StoryPilot:&nbsp;<a href="http://www.storypilot.org/" target="_blank">storypilot.org</a></p>
+
+<p>blog:&nbsp;<a href="http://harmony-institute.org/therippleeffect/" target="_blank">harmony-institute.org/therippleeffect</a></p>
+</div></div></section><section style="display: block;" class="future" aria-hidden="true" data-id="c8923a11e6b798db4f916b1c8feae28e" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 94px; top: 0px; height: auto;" data-block-id="8085597be33c88f8c5a9a894d092bedb"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>A few more thoughts...</h2>
+
+<p><em>some based on my intuition</em></p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 86px; top: 171px; height: auto;" data-block-id="50e9c24d20cf2cd5800f539a72d01a18"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>data science is a still new field</li>
+	<li>younger companies need data engineering before data science</li>
+	<li>show off your projects
+	<ul>
+		<li>personal websites are great</li>
+		<li>Github + LinkedIn is a good minimum</li>
+	</ul>
+	</li>
+	<li>write blog posts if you have a website
+	<ul>
+		<li>explain your projects &amp; analyze results</li>
+		<li>book reviews, course reviews, etc</li>
+		<li>short posts (1 paragraph) are okay</li>
+	</ul>
+	</li>
+	<li>you needn't&nbsp;know everything data science-related, now or any time soon</li>
+</ul>
+</div></div></section><section style="display: block;" class="future" aria-hidden="true" data-id="b9ddfb870e1357d24efb2bfc1150b5b8" hidden=""><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 66px; height: auto;" data-block-id="ce0c64a8dff9c837f5fe018854e56efd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text">
+<h2>Thanks!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 222px; height: auto;" data-block-id="ca971d0dba23edc0b1f824615ada08d1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text">
+<ul>
+	<li>my colleagues / friends for their advice</li>
+	<li>the Data Rave team &amp; eBay</li>
+	<li>you all for your attention</li>
+</ul>
+</div></div></section>
+				</div>
+			<div class="backgrounds"><div data-loaded="true" style="display: block;" class="slide-background present"></div><div data-loaded="true" style="display: block;" class="slide-background future"></div><div data-loaded="true" style="display: block;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div style="display: none;" class="slide-background future"></div><div data-loaded="true" style="display: block;" class="slide-background future"></div><div data-loaded="true" style="display: block;" class="slide-background future"></div><div data-loaded="true" style="display: block;" class="slide-background future"></div></div><div style="display: block;" class="progress"><span style="width: 0px;"></span></div><aside style="display: block;" class="controls"><div class="navigate-left"></div><div class="navigate-right enabled"></div><div class="navigate-up"></div><div class="navigate-down"></div></aside><div class="slide-number"></div><div class="state-background"></div><div class="pause-overlay"></div><div aria-atomic="true" aria-live="polite" id="aria-status-div" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">
+Transitioning to a data science career
+
+
+Chris Ryan
+
+data scientist, Harmony Institute
+
+Oct 21st 2014
+
+Data Rave Meetup&nbsp;
+</div></div>
+		</div>
+	</div>
+
+<!--
+	<div style="opacity: 1;" class="deck-kudos">
+		<button class="kudos-button kudos-trigger" data-kudos-id="247312" data-kudoed-by-user="false">
+			<div class="kudos-heart">
+				<span class="kudos-icon icon i-heart-fill"></span>
+			</div>
+			<div class="kudos-count" data-kudos-value="0" data-kudos-id="247312"></div>
+		</button>
+	</div>
+-->
+
+	
+
+</div>
+
+<!--
+<div class="column">
+	<header class="extra-wide">
+		<ul class="deck-social">
+			<li><div style="display: block;" class="fb-like" data-send="false" data-layout="button_count" data-show-faces="false"><iframe style="width: 30px; height: 19px; border: 0px none;" id="eaokalzdrxzsmdtnrybmmvupqznfbartiidrue"></iframe></div></li>
+			<li><a style="display: block;" href="https://twitter.com/share" class="twitter-share-button" data-text="datarave_oct21" data-url="http://slides.com/cjryan/datarave_oct21"><iframe style="width: 30px; height: 19px; border: 0px none;" id="xzhjdawrmuiwcwcaawufemyrexvdhtvwcybwr"></iframe></a></li>
+			<li><div style="display: block;" class="g-plusone" data-size="medium"><iframe style="width: 30px; height: 19px; border: 0px none;" id="lyccsiyprpvfoadqiwkuptqxndgsihqb"></iframe></div></li>
+		</ul>
+-->
+
+<!--
+		<div class="deck-promotion">
+			<a class="button cta" href="http://slides.com/pricing">Create a presentation like this <span class="logo"></span></a>
+		</div>
+-->
+
+<!--
+		<div class="deck-options">
+			<a class="fullscreen-button" data-tooltip="Fullscreen" href="#"><span class="icon i-fullscreen"></span></a>
+			<a class="comment-button" data-tooltip="Comments" data-scroll-to="" href="#comments" data-scroll-to-offset="-90"><span class="icon i-comment-stroke"></span></a>
+			<a class="share-button" data-tooltip="Share" href="#"><span class="icon i-share"></span></a>
+		</div>
+-->
+
+<!--
+
+		<div class="details">
+			<div class="deck-info">
+				<h3 class="title">datarave_oct21</h3>
+				<ul class="deck-meta">
+					<li data-tooltip="Published date" data-tooltip-delay="500">
+						<span class="icon i-clock"></span>
+						<time class="value ago" datetime="2014-10-13 17:04:36 UTC">8 days ago</time>
+					</li>
+					<li data-tooltip="Kudos" data-tooltip-delay="500">
+						<span class="icon i-heart-fill"></span>
+						<span class="value" data-kudos-value="0" data-kudos-id="247312"></span>
+					</li>
+					<li data-tooltip="Views" data-tooltip-delay="500">
+						<span class="icon i-eye"></span>
+						<span class="value">47</span>
+					</li>
+				</ul>
+			</div>
+			-->
+
+<!--
+			<div class="user-info">
+	<div class="picture" style="background-image: url(https://www.gravatar.com/avatar/b7e34f0de7c00ed00feee4d3e5328636?s=140&amp;d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></div>
+	<div class="text">
+		<h3>
+			<a href="http://slides.com/cjryan" class="username">Chris Ryan</a>
+		</h3>
+		<p class="description"></p>
+		<ul class="links">
+			
+			
+		</ul>
+	</div>
+	<div class="clear"></div>
+</div>
+-->
+
+<!--
+			<div class="clear"></div>
+		</div>
+	</header>
+-->
+
+<!--
+	<section class="comments" id="comments">
+		<div id="disqus_thread"><iframe verticalscrolling="no" horizontalscrolling="no" src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/a.html" style="width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 321px ! important;" title="Disqus" tabindex="0" scrolling="no" allowtransparency="true" data-disqus-uid="2" id="dsq-2" frameborder="0" width="100%"></iframe><iframe style="width: 1020px ! important; border: medium none ! important; overflow: hidden ! important; top: 0px ! important; min-width: 1020px ! important; max-width: 1020px ! important; position: fixed ! important; z-index: 2147483646 ! important; height: 29px ! important; min-height: 29px ! important; max-height: 29px ! important; display: none ! important;" title="Disqus" tabindex="0" scrolling="no" allowtransparency="true" data-disqus-uid="indicator-north" id="dsq-indicator-north" frameborder="0"></iframe><iframe style="width: 1020px ! important; border: medium none ! important; overflow: hidden ! important; bottom: 0px ! important; min-width: 1020px ! important; max-width: 1020px ! important; position: fixed ! important; z-index: 2147483646 ! important; height: 29px ! important; min-height: 29px ! important; max-height: 29px ! important; display: none ! important;" title="Disqus" tabindex="0" scrolling="no" allowtransparency="true" data-disqus-uid="indicator-south" id="dsq-indicator-south" frameborder="0"></iframe></div>
+	</section>
+
+	<section class="deck-list">
+		<h2>More from <a href="http://slides.com/cjryan">Chris Ryan</a></h2>
+		<ul class="carousel">
+			<li class="deck-thumbnail">
+  <div class="deck-image" style="background-image: url(https://s3.amazonaws.com/media-p.slid.es/thumbnails/cjryan/be97cb/eye-trackin.jpg)">
+    <a class="deck-link" href="http://slides.com/cjryan/eye-trackin"></a>
+  </div>
+  <footer class="deck-details">
+    <a class="author" href="http://slides.com/cjryan">
+      <span class="picture" style="background-image: url(https://www.gravatar.com/avatar/b7e34f0de7c00ed00feee4d3e5328636?s=140&amp;d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png)"></span>
+      <span class="name">Chris Ryan</span>
+    </a>
+    <div class="stats">
+      <div>33<span class="icon i-eye"></span></div>
+    </div>
+  </footer>
+</li>
+
+		</ul>
+	</section>
+
+</div>
+-->
+      </div>
+      <footer class="global-footer">
+<!--
+    <div class="link-group">
+      <h5>Product</h5>
+      <a href="http://slides.com/">Home</a>
+      <a href="http://slides.com/explore">Explore</a>
+      <a href="http://slides.com/features">Features</a>
+      <a href="http://slides.com/pricing">Pricing</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Help</h5>
+      <a href="http://help.slides.com/" target="_blank">Forum</a>
+      <a href="http://help.slides.com/knowledgebase" target="_blank">Knowledge base</a>
+      <a href="#" data-feedback-mode="smartvote">Give feedback</a>
+      <a href="#" data-feedback-mode="contact">Report an issue</a>
+    </div>
+
+    <div class="link-group">
+      <h5>News</h5>
+      <a href="http://blog.slides.com/" target="_blank">Blog</a>
+      <a href="http://twitter.com/slidesapp" target="_blank">Twitter</a>
+      <a href="http://facebook.com/slidesapp" target="_blank">Facebook</a>
+      <a href="https://plus.google.com/+slidesapp/" rel="publisher" target="_blank">Google+</a>
+    </div>
+
+    <div class="link-group">
+      <h5>Company</h5>
+      <a href="http://slides.com/about">About us</a>
+      <a href="http://slides.com/terms">Terms</a>
+      <a href="http://slides.com/privacy">Privacy</a>
+    </div>
+-->
+
+    <div class="copyright"><span>These slides were <a href="http://slides.com/cjryan/datarave_oct21" target="_blank">originally composed on Slides.com</a>.<br>Slides is made by Whim, LLC. ©2014</span></div>
+</footer>
+
+    </div> <!--! end of #container -->
+    
+<script>
+	var SLConfig = {"deck":{"id":247312,"slug":"datarave_oct21","title":"datarave_oct21","description":"","visibility":"all","published_at":"2014-10-13T17:04:36Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/cjryan/b943a8/datarave_oct21.jpg","view_count":47,"user":{"id":123746,"username":"cjryan","name":"Chris Ryan","email":"christopher.james.ryan@gmail.com","description":"","thumbnail_url":"https://www.gravatar.com/avatar/b7e34f0de7c00ed00feee4d3e5328636?s=140\u0026d=https%3A%2F%2Fs3.amazonaws.com%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","pro":false,"enterprise":false,"enterprise_manager":false,"notify_on_receipt":false,"billing_address":null,"editor_tutorial_completed":true,"registered":true},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"montserrat","theme_color":"sand-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"should_loop":false,"rtl":false,"version":2}};
+</script>
+    <script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/application-ddea68508cff89094b5b50051988c81c.js" type="text/javascript"></script><div id="modal"></div><div id="modal-cover"></div><div id="modal-background"></div>
+    	<script src="20141021_Chris_Ryan_Transitioning_to_a_Data_Science_Career/reveal.js" type="text/javascript"></script>
+	
+
+
+  
+
+<div id="fb-root"></div></body></html>

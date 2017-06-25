@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta charset="utf-8">
+<title>R for people who already know something about programming</title>
+
+<link rel="icon" href="http://thomaslevine.com/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/style.css" type="text/css">
+
+<link rel="stylesheet" href="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/local.css" type="text/css">
+
+
+
+
+<link rel="alternate" type="application/x-wiki" title="Edit this page" href="http://thomaslevine.com/ikiwiki.cgi?page=dada%2Fr-for-people-who-already-know-something-about-programming&amp;do=edit">
+
+
+<link rel="vcs-git" href="ssh://b-thomaslevine@thomaslevine.branchable.com/" title="wiki git repository">
+<link rel="vcs-git" href="git://thomaslevine.branchable.com/" title="wiki git repository">
+
+
+
+
+<style>@-webkit-keyframes pophmmtimutjiyzkumpsewelconpteivtxpif {50% {-webkit-transform:scale(1.2);}100% {-webkit-transform:scale(1);}}@keyframes pophmmtimutjiyzkumpsewelconpteivtxpif {50% {-webkit-transform:scale(1.2);transform:scale(1.2);}100% {-webkit-transform:scale(1);transform:scale(1);}}#hmmtimutjiyzkumpsewelconpteivtxpif{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;border:solid 2px #fff !important;color:#fff !important;display:block !important;height:auto !important;margin:0 !important;opacity:0.9 !important;padding:7px 10px !important;position:fixed !important;visibility:visible !important;width:auto !important;z-index:2147483647 !important;-moz-border-radius:5px !important;border-radius:5px !important;-moz-box-shadow:0px 0px 20px #000 !important;box-shadow:0px 0px 20px #000 !important;}.hmmtimutjiyzkumpsewelconpteivtxpif-blocked{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;color:#AAA !important;display:inline !important;text-decoration:line-through !important;}#hmmtimutjiyzkumpsewelconpteivtxpif br{display:block !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;}#hmmtimutjiyzkumpsewelconpteivtxpif span{background:transparent !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;}#hmmtimutjiyzkumpsewelconpteivtxpif div{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;border:0 !important;margin:0 !important;padding:0 !important;width:auto !important;letter-spacing:normal !important;font:13px Arial,Helvetica !important;text-align:left !important;text-shadow:none !important;text-transform:none !important;word-spacing:normal !important;}#hmmtimutjiyzkumpsewelconpteivtxpif a{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;font-weight:normal !important;background:none !important;text-decoration:underline !important;color:#fff !important;}a#hmmtimutjiyzkumpsewelconpteivtxpif-gear{padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;text-decoration:none !important;position:absolute !important;display:none !important;font-size:20px !important;width:20px !important;height:20px !important;line-height:20px !important;text-align:center !important;background-color:rgba(255,255,255,.8) !important;background-image:url(resource://firefox-at-ghostery-dot-com/ghostery/data/images/gear.svg) !important;background-size:16px 16px !important;background-position:center center !important;background-repeat:no-repeat !important;text-decoration:none !important;}a#hmmtimutjiyzkumpsewelconpteivtxpif-gear:hover{-webkit-animation-name:pophmmtimutjiyzkumpsewelconpteivtxpif !important;animation-name:pophmmtimutjiyzkumpsewelconpteivtxpif !important;-webkit-animation-duration:0.3s !important;animation-duration:0.3s !important;}#hmmtimutjiyzkumpsewelconpteivtxpif:hover #hmmtimutjiyzkumpsewelconpteivtxpif-gear{text-decoration:none !important;display:inline-block !important;}#hmmtimutjiyzkumpsewelconpteivtxpif hr{visibility:hidden !important;padding:0;margin:0;font:13px Arial,Helvetica;text-transform:none;font-size: 100%;vertical-align:baseline;line-height:normal;color:#fff;height:1em;}@media print{#hmmtimutjiyzkumpsewelconpteivtxpif{display:none !important;}}</style></head>
+<body><script src="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/ikiwiki.js" type="text/javascript" charset="utf-8"></script>
+<script src="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/toggle.js" type="text/javascript" charset="utf-8"></script><style type="text/css">div.toggleable { display: none; }</style>
+
+<article class="page">
+
+<section class="pageheader">
+<header class="header">
+<span>
+<span class="parentlinks">
+
+<a href="http://thomaslevine.com/">~</a>/ 
+
+<a href="http://thomaslevine.com/%21/">dada</a>/ 
+
+</span>
+<span class="title">
+R for people who already know something about programming
+
+</span>
+</span>
+
+
+<form method="get" action="/ikiwiki.cgi" id="searchform">
+<div>
+<input id="searchbox" name="P" size="16" placeholder="search" type="text">
+</div>
+</form>
+
+
+
+</header>
+
+
+<nav class="actions">
+<ul>
+
+<li><a href="http://thomaslevine.com/ikiwiki.cgi?page=dada%2Fr-for-people-who-already-know-something-about-programming&amp;do=edit" rel="nofollow">Edit</a></li>
+
+
+<li><a href="http://thomaslevine.com/recentchanges/">RecentChanges</a></li>
+
+
+<li><a href="http://source.thomaslevine.branchable.com/?p=source.git;a=history;f=dada/r-for-people-who-already-know-something-about-programming/index.mdwn;hb=HEAD">History</a></li>
+
+
+
+<li><a href="http://thomaslevine.com/ikiwiki.cgi?do=prefs">Preferences</a></li>
+
+
+
+<li><a href="http://thomaslevine.com/ikiwiki.cgi?do=branchable">Branchable</a></li>
+
+
+
+
+<li><span class="createlink"><a href="http://thomaslevine.com/ikiwiki.cgi?page=Discussion&amp;from=dada%2Fr-for-people-who-already-know-something-about-programming&amp;do=create" rel="nofollow">?</a>Discussion</span></li>
+
+
+</ul>
+</nav>
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+<div id="pagebody">
+
+<section id="content">
+<p>The introductory R texts and courses that I see normally read a bit
+differently from introductions to other languages.</p>
+
+<blockquote>
+  <p>Introduction to [some language] for people who already know programming</p>
+</blockquote>
+
+<p>Sometimes, such materials for other languages are intended for people
+who are already familiar with programming languages. They are quite
+concise, and they introduce the language by using jargon about programming
+languages and by relating the language to other programming languages.</p>
+
+<blockquote>
+  <p>Introduction to programming through [some language]</p>
+</blockquote>
+
+<p>Other times, these materials are intended as an introduction to programming
+through a particular programming language. They start out with elementary
+language features, including the flow of the program, simple data structures,
+and the relationship between the program and the computer hardware.</p>
+
+<blockquote>
+  <p>Introduction to R for people who already know statistics</p>
+</blockquote>
+
+<p>The introduction to R typically ignores that it is a programming language
+and instead focuses on statistics. Some introductions teach people who
+already know some statistics how to use R to run the statistics that they
+know.</p>
+
+<blockquote>
+  <p>Introduction to statistics through R</p>
+</blockquote>
+
+<p>Other introductions come alongside an introduction to statistics, so
+they are introductions to statistics through R. This works well for people
+who know something about statistics and nothing about programming, but it
+can be especially confusing for people who already know something about
+programming.</p>
+
+<blockquote>
+  <p>Introduction to R for people who already know <em>programming</em></p>
+</blockquote>
+
+<p>So I’m going to try teaching you about R like you might expect a programming
+language to be introduced, by discussing some of its properties with
+programming language terminology and by relating it to other languages.</p>
+
+<h2 id="howtothinkaboutr">How to think about R</h2>
+
+<p>There are a lot of reasons why people make new languages, and understanding
+these reasons can help you understand the languages. Before we start talking
+about the specifics of the language, we need to understand why R is so
+bizarre and why learning materials related to R might make absolutely no
+sense to you.</p>
+
+<p>Keep these three explosive statements about R in mind.</p>
+
+<blockquote>
+  <ol>
+  <li>The thing about R is that it was designed by statisticians.</li>
+  <li>Everything in R is a complete hack.</li>
+  <li>People who use R only know how to use R.</li>
+  </ol>
+</blockquote>
+
+<p>I don’t really know whether the above statements are true,
+but R makes a lot of sense when you assume that they are.</p>
+
+<h3 id="rwasdesignedbystatisticians">R was designed by statisticians</h3>
+
+<p>I don’t know whether R really was designed by statisticians, (I also don’t
+quite know what I mean by “statisticians”.) but it makes sense that we would
+wind up with this language if it was designed by statisticians.
+</p>
+
+<p>R’s terminology is totally bizarre. Here are some examples.</p>
+
+<blockquote>
+  <ul>
+  <li><code>apply</code> instead of “map”</li>
+  <li><code>array</code> and <code>list</code> don’t do what you think</li>
+  </ul>
+</blockquote>
+
+<p>The higher-order function that you would usually call <code>map</code> is instead
+called <code>apply</code>.</p>
+
+<p>There are <code>array</code> and <code>list</code> data structures in R, but they don’t do what
+you think they do.</p>
+
+<h3 id="everythinginrisacompletehack">Everything in R is a complete hack</h3>
+
+<p>Again, I don’t really know if everything in R is a complete hack, but
+I don’t see particularly strong evidence against that statement.</p>
+
+<p>A common statement in R is to assign a value to the result of a function. 
+As an example of this, let’s look at the <code>rownames</code> function.</p>
+
+<pre><code>&gt; rownames(Formaldehyde)
+[1] "1" "2" "3" "4" "5" "6"
+&gt; rownames(Formaldehyde)[3] &lt;- 8 # R uses arrows for assignment.
+&gt; rownames(Formaldehyde)
+[1] "1" "2" "8" "4" "5" "6"
+</code></pre>
+
+<p>This is slightly bizarre, but the thing that makes me consider it a complete
+hack is the way this is implemented. I don’t really understand how it works,
+but it involves defining two functions, one called ‘rownames’ and another
+called ‘rownames&lt;-‘.</p>
+
+<h3 id="rhasconnectionstoeverythingbecausepeoplewhouseronlyknowhowtouser.">R has connections to everything because people who use R only know how to use R.</h3>
+
+<p>Shiny is the best example of this; people who use R only know how
+to use R, so when they want to write websites, they need their own
+domain-specific templating language written in R.
+(That said, there are good reasons to use Shiny too.)</p>
+
+<p>Here is the <code>ui.R</code> file from the
+<a href="http://shiny.rstudio.com/gallery/telephones-by-region.html">Telephones by region</a>
+Shiny demo application.</p>
+
+<pre><code>library(shiny)
+
+# Rely on the 'WorldPhones' dataset in the datasets
+# package (which generally comes preloaded).
+library(datasets)
+
+# Define the overall UI
+shinyUI(
+
+  # Use a fluid Bootstrap layout
+  fluidPage(    
+
+    # Give the page a title
+    titlePanel("Telephones by region"),
+
+    # Generate a row with a sidebar
+    sidebarLayout(      
+
+      # Define the sidebar with one input
+      sidebarPanel(
+        selectInput("region", "Region:", 
+                    choices=colnames(WorldPhones)),
+        hr(),
+        helpText("Data from AT&amp;T (1961) The World's Telephones.")
+      ),
+
+      # Create a spot for the barplot
+      mainPanel(
+        plotOutput("phonePlot")  
+      )
+
+    )
+  )
+)
+</code></pre>
+
+<p>In other languages, people would probably write templates that look
+mostly like HTML. But people who use R only know how to use R, so they
+need a new domain-specific language written in R.</p>
+
+<h2 id="basicsofthelanguage">Basics of the language</h2>
+
+<blockquote>
+  <ul>
+  <li>Interpreted</li>
+  <li>Largely written in C and Fortran</li>
+  <li>A Lisp</li>
+  </ul>
+</blockquote>
+
+<h2 id="conventionsbestpracticesandnotablesyntax">Conventions, best practices, and notable syntax</h2>
+
+<p>Let’s start with some syntax.</p>
+
+<h3 id="arrows">Arrows</h3>
+
+<p>You can use equal signs for assignment, but arrows are more fun.</p>
+
+<pre><code>a &lt;- 4
+a &lt;- b &lt;- 5
+a &lt;- b &lt;- 6 -&gt; c -&gt; d
+</code></pre>
+
+<p><code>&lt;&lt;-</code> is for global assignment.</p>
+
+<pre><code>a.function &lt;- function() {global.variable &lt;&lt;- 'peanut butter'}
+another.function &lt;- function() {local.variable &lt;&lt;- 'jelly'}
+</code></pre>
+
+<h3 id="dots">Dots</h3>
+
+<p>Sometimes, we want to put two words in the name of a function. Since we don’t
+like having spaces in function names, we might (in other languages) use
+underscores or camel case.</p>
+
+<pre><code>camelCase &lt;- function() {}
+underscores_instead_of_spaces &lt;- function() {}
+</code></pre>
+
+<p>In R, we use dots instead of spaces.</p>
+
+<pre><code>dots.instead.of.spaces &lt;- function() {}
+</code></pre>
+
+<p>Dots are just ordinary characters; they do not separate tokens in any way.</p>
+
+<h3 id="creatingnumericvectors">Creating numeric vectors</h3>
+
+<p>The normal way of creating vectors is to concatenate vector elements.</p>
+
+<pre><code>c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+</code></pre>
+
+<p>The creation of numeric vectors is quite common, so there is a <code>seq</code> command
+(like in many other languages).</p>
+
+<pre><code>seq(1, 10)
+</code></pre>
+
+<p>And the creation of vectors of ascending or descending integers is so common
+that there’s a special operator for that</p>
+
+<pre><code>1:10
+10:1
+10:1 == rev(1:10)
+</code></pre>
+
+<h3 id="braces">Braces</h3>
+
+<p>We can group a bunch of expressions with a brace.</p>
+
+<pre><code>2 == {x &lt;- 3; 8; 5 - x}
+</code></pre>
+
+<p>The braces that typically come in a function definition aren’t specific to
+function definitions.</p>
+
+<pre><code>f &lt;- function() 'The result'
+f() == 'The result'
+</code></pre>
+
+<p>This is, in fact, the same as JavaScript. Unlike in Javascript, you’ll
+actually need to know about this once in a while.</p>
+
+<h3 id="indexing">Indexing</h3>
+
+<p>First of all, indexing starts at 1.</p>
+
+<pre><code>c('a','b')[1] == 'a'
+</code></pre>
+
+<p>Consider a cube-shaped array with three cells per side.</p>
+
+<pre><code>contents &lt;- c('one', 'two', 'three',
+              'four', 'five', 'six',
+              'seven', 'eight', 'nine',
+              'ten', 'eleven', 'twelve',
+              'thirteen', 'fourteen', 'fifteen',
+              'sixteen', 'seventeen', 'eighteen',
+              'nineteen', 'twenty', 'twenty-one',
+              'twenty-two', 'twenty-three', 'twenty-four',
+              'twenty-five', 'twenty-six', 'twenty-seven')
+a &lt;- array(contents, dim = c(3,3,3))
+</code></pre>
+
+<p>Look at all the ways we can index it.</p>
+
+<pre><code>a[1,1,1]
+a[1,1,2]
+a[,1,2]
+a[,,2]
+a[1,1,2]
+a[-1,1,2]
+a[,,-2]
+a[,,-(2:3)]
+a[round(runif(27))]
+a[as.logical(round(runif(27)))]
+a[c(FALSE,TRUE,FALSE,FALSE,FALSE)]
+a[1:27 %% 5 == 2]
+dimnames(a) &lt;- list(c('small','medium','big'),
+                    c('low','middle','high'),
+                    c('a','b','c'))
+a['small','high','c']
+</code></pre>
+
+<h3 id="vectorization">Vectorization</h3>
+
+<p>R is really slow, but the parts written in C and Fortran are fast, so
+it is good practice to “vectorize” your code. For example, adding a
+scalar to a vector</p>
+
+<pre><code>vec &lt;- 1:100
+vec.2 &lt;- vec + 1
+</code></pre>
+
+<p>is much faster than iterating through <code>vec</code> and adding 1 to each element.</p>
+
+<pre><code>vec &lt;- 1:100
+vec.2 &lt;- vector(length = length(vec))
+for (i in (1:length(vec))) {
+  vec.2[i] &lt;- vec[i]
+}
+</code></pre>
+
+<h2 id="types">Types</h2>
+
+<p>R is dynamically typed, but there’s a particular weird thing that you need
+to know about. Lots of R involves matrix calculations, and R magically does
+the right thing depending on what you pass. For example, let’s start with
+this vector.</p>
+
+<pre><code>a &lt;- 1:10
+</code></pre>
+
+<p>and see what happens when we add different things to it.</p>
+
+<pre><code>a + 3
+a + (10:1)
+a + 1:2
+a + 1:8
+</code></pre>
+
+<p>So you should think of the dimensionality as a component of the type of
+a thing in R.</p>
+
+<h2 id="primitivedatastructuresareweird">Primitive data structures are weird</h2>
+
+<p>R’s most primitive data structures (or at least the most primitive ones that
+I know about and would ever use) are very high-level.</p>
+
+<p>A lot of times we work with numbers and text.</p>
+
+<pre><code>&gt; str(8)
+num 8
+&gt; str('A string')
+chr "A string"
+</code></pre>
+
+<p>(<code>str</code> is the command for inspecting the structure of something. In other
+languages, you might instead call this sort of command <code>type</code>.)</p>
+
+<h3 id="vectors">Vectors</h3>
+
+<p>Sometimes we want to have several numbers inside of a container. We might
+use a vector for this.</p>
+
+<pre><code>a.vector &lt;- c(8, 7, 6)
+</code></pre>
+
+<p>Vectors are kind of like the things you might call “arrays”, but there’s a
+lot more to them. For example, you can assign string keys for each of the
+values.</p>
+
+<pre><code>names(a.vector) &lt;- c('Apple', 'Orange', 'Watermelon')
+</code></pre>
+
+<p>Now, we can query this vector with both numeric and character indices.</p>
+
+<pre><code>&gt; a.vector
+ Apple     Orange Watermelon 
+     8          7          6
+&gt; a.vector[1]
+Apple 
+    8 
+&gt; a.vector['Apple']
+Apple 
+    8 
+</code></pre>
+
+<p>So a vector is kind of like a mapping type as well. In fact, most R structures
+are the same in this respect; they usually support both numerical and character
+indexing.</p>
+
+<h3 id="factors">Factors</h3>
+
+<p>The factor is a special version of the numeric vector. </p>
+
+<pre><code>jelly.bean.vector &lt;- c('blue', 'pink', 'yellow', 'pink', 'yellow', 'pink')
+jelly.bean.factor &lt;- factor(jelly.bean.vector)
+</code></pre>
+
+<p>“Factor” is a statisticsy word; other languages might call this
+an enumeration. Underneath, the factor is a bunch of integers with
+“levels” that map integers to character values.</p>
+
+<pre><code>as.numeric(jelly.bean.factor)
+# [1] 1 2 3 2 3 2
+levels(jelly.bean.factor)
+# [1] "blue"   "pink"   "yellow"
+</code></pre>
+
+<p>We can change the level values.</p>
+
+<pre><code>levels(jelly.bean.factor)[1] &lt;- 'violet'
+jelly.bean.factor
+# [1] violet  pink   yellow pink   yellow pink  
+# Levels: violet pink yellow
+</code></pre>
+
+<p>The levels have whatever order you gave them (alphabetical if you didn’t
+say it explicitly), so you can do this</p>
+
+<pre><code>sort(jelly.bean.factor)
+# [1] violet pink   pink   pink   yellow yellow
+# Levels: violet pink yellow
+</code></pre>
+
+<h3 id="dataframes">Data frames</h3>
+
+<p>The data frame is like a list of vectors. (Remember, “list” means something
+strange in R.)</p>
+
+<pre><code>xy &lt;- data.frame(x = 1:9, y = 1:3)
+</code></pre>
+
+<p>We can select the vectors with <code>$</code></p>
+
+<pre><code>xy$x
+</code></pre>
+
+<p>or with normal indexing</p>
+
+<pre><code>xy[,1]
+xy[,'x']
+</code></pre>
+
+<p>The presence of that comma matters. If we include the comma, we select
+a vector, and if we exclude it, we select a data frame with one column.</p>
+
+<pre><code>xy[1]
+xy['x']
+</code></pre>
+
+<p>The part before the comma is for selecting rows.</p>
+
+<pre><code>xy[4:8,1:2]
+</code></pre>
+
+<p>And we can also select rows with characters.</p>
+
+<pre><code>row.names(xy)[3] &lt;- 'third row'
+xy['third row',]
+</code></pre>
+
+<h2 id="strangethings">Strange things</h2>
+
+<h3 id="dontthinkaboutpointers">Don’t think about pointers</h3>
+
+<p>In many languages, you should think of variables as pointers to some data.</p>
+
+<pre><code>// JavaScript
+var container = {"bacon slices": 8, "eggs": 11}
+var another_variable = container
+another_variable["tomatoes"] = 4
+console.log(container)
+// { 'bacon slices': 8, eggs: 11, tomatoes: 4 }
+</code></pre>
+
+<p>In R, you can think of pretty much variable as a separate copy of data.</p>
+
+<pre><code>container &lt;- list(bacon.slices = 8, eggs = 11)
+another.variable &lt;- container
+another.variable$tomatoes &lt;- 4
+container
+# $bacon.slices
+# [1] 8
+#
+# $eggs
+# [1] 11
+</code></pre>
+
+<h3 id="counter-intuitiveexecutionorder">Counter-intuitive execution order</h3>
+
+<p>In other dynamic languages, the arguments of a function are evaluated before
+the function is run with those arguments. This is what happens when we take
+the absolute value of <code>3 - 5</code> in R.</p>
+
+<pre><code>abs(3 - 5)
+</code></pre>
+
+<p>Some functions work differently. Let’s consider <code>eval</code>. In JavaScript, you
+might write this.</p>
+
+<pre><code>12 == eval('var a = 4; a + 8')
+</code></pre>
+
+<p>In R, we don’t provide a string of the expression-to-be-evaluated; instead,
+we just provide the expression.</p>
+
+<pre><code>12 == eval({a &lt;- 4; a + 8})
+'a &lt;- 4; a + 8' == eval('a &lt;- 4; a + 8')
+</code></pre>
+
+<p>(The braces are just there to group the expressions; they are not specific to
+<code>eval</code>.)</p>
+
+<p>I think this behavior is implemented through meta-programming, so it’s kind
+of not part of the language. Except that it is part of the language.</p>
+
+<h3 id="missingvalues">Missing values</h3>
+
+<p>Many languages have a concept of nothing, and R has this too; it’s called
+<code>NULL</code>. But this is inappropriate for expressing missing data.</p>
+
+<p>Suppose we are surveying the hats that people wear. Among other things,
+we record the longest diameter of the hat that each person is wearing.</p>
+
+<blockquote>
+  <ol>
+  <li>What do we do if the person isn’t wearing a hat?</li>
+  <li>What do we do if the fire alarm goes off and we can’t finish taking
+  the hat measurements?</li>
+  </ol>
+</blockquote>
+
+<p>In R, the answer to the first question is <code>NULL</code>, and the answer to the
+second is <code>NA</code>.</p>
+
+<p>The distinction is relevant in many calculations. For example, the sum
+of nothing and eight is nothing.</p>
+
+<pre><code>sum(NULL, 8)
+# 8
+</code></pre>
+
+<p>If we add a missing value to eight, we don’t know what the result is.</p>
+
+<pre><code>sum(NA, 8)
+# NA
+</code></pre>
+
+<h2 id="coollanguagefeatures">Cool language features</h2>
+
+<h3 id="formulaobjects">Formula objects</h3>
+
+<p>R has a nice syntax for specifying model formulae.</p>
+
+<pre><code>f &lt;- Sepal.Length ~ Petal.Length
+lm(f, data = iris)
+</code></pre>
+
+<p>This means that we are fitting a linear regression model (<code>lm</code>) where the
+dependent variable is <code>Sepal.Length</code> and the independent variable is
+<code>Petal.Length</code>.</p>
+
+<h3 id="anend-userprogram">An end-user program</h3>
+
+<p>You can think of R as an end-user program, akin to Excel. The R interpreter
+has a bunch of things that you might not expect of an interpreter.</p>
+
+<blockquote>
+  <ul>
+  <li><code>help</code></li>
+  <li><code>example</code></li>
+  <li><code>data</code></li>
+  </ul>
+</blockquote>
+
+<p>You can write a help and an example for anything that is exported from a
+package or that comes with base R. For example, we can ask for help about
+the normal random number generator</p>
+
+<pre><code>help(rnorm)
+</code></pre>
+
+<p>and run some example random number generations.</p>
+
+<pre><code>example(rnorm)
+</code></pre>
+
+<p>Instead of using random numbers, we could use one of the datasets.
+If you package datasets in the R way and then load the package, they show
+up when you run <code>data</code>.</p>
+
+<p><code>plot</code> and <code>summary</code> are some other methods that people typically
+define for their classes.</p>
+
+<h3 id="aboutplotting">About plotting</h3>
+
+<p>There are three types of graphics that people make in R</p>
+
+<blockquote>
+  <ul>
+  <li>Base R graphics</li>
+  <li>Lattice graphics (from the lattice package)</li>
+  <li>ggplot graphics (from ggplot2 or ggplot packages)</li>
+  </ul>
+</blockquote>
+
+<p>You probably should use ggplot2, but I learned base R graphics before
+I learned ggplot2, and base R graphics are part of R proper, so I’m going
+to tell you about base R graphics.</p>
+
+<p>Base R graphics make sense if you consider that they were designed for
+pen plotters.</p>
+
+<p><a href="https://twitter.com/thomaslevine/status/487219177489711104"><img src="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/plotter.png" alt="A screenshot from twitter" id="ascreenshotfromtwitter"></a></p>
+
+<p>I’m not going to talk about how to use the plotting capabilities, but you
+can look at this talk on
+<a href="http://www.livestream.com/knerd/video?clipId=pla_a5d59285-9399-47dc-aaef-2b9a77142d5e">Music Videos in R</a>
+if you would like to learn more about making plots with R.</p>
+
+<h3 id="objectorientation">Object orientation</h3>
+
+<p>There are three ways to make classes in R, and I don’t remember all of them.
+You probably won’t use them very often, and I have to look them up when I
+want to use them.</p>
+
+<p>You usually get the properties of an object with <code>$</code>, or sometimes with <code>@</code>.
+I think these are for the different ways of making classes.</p>
+
+<h3 id="environments">Environments</h3>
+
+<p>Environments are a way to get separate scopes; you can evaluate code in
+different places, with some-but-not-much interference.</p>
+
+<p>env &lt;- new.env()
+  eval({twelve &lt;- 3 + 9}, envir=env)
+  get(‘twelve’, envir = env)</p>
+
+<h2 id="whatitmeanswhenpeoplesaytheyknowr">What it means when people say they “know R”</h2>
+
+<p>When someone says he or she knows R, it doesn’t mean that he or she knows
+the things I just told you; it usually means that he or she knows
+how to open a data file, fit whatever model he or she uses in his or her
+work, and make a plot. For example, he or she might know how to do this.</p>
+
+<pre><code>ChickWeight &lt;- read.csv('ChickWeight.csv')
+plot(ChickWeight)
+fit &lt;- lm(weight ~ Time + Diet, data = ChickWeight)
+print(summary(fit))
+plot(fit)
+</code></pre>
+
+<p>The script will be a bit different for different people; they’ll know how to
+import the particular data format that they work with, how to make the plots
+that their peers like to see, how to fit the models that their field likes to
+talk about, and how to do some sort of model diagnosis.</p>
+
+<h2 id="otherresources">Other resources</h2>
+
+<blockquote>
+  <ul>
+  <li><code>sos::findFn</code></li>
+  <li><a href="http://thomaslevine.com/%21/r-spells-for-data-wizards/">R spells for data wizards</a>, by me</li>
+  <li><a href="http://adv-r.had.co.nz/">Advanced R</a>, by Hadley Wickham</li>
+  <li><a href="http://www.livestream.com/knerd/video?clipId=pla_a5d59285-9399-47dc-aaef-2b9a77142d5e">Music Videos in R</a>, by me</li>
+  </ul>
+</blockquote>
+
+</section>
+
+
+
+
+
+
+
+</div>
+
+<footer id="footer" class="pagefooter">
+
+<nav id="pageinfo">
+
+
+
+
+
+
+
+
+
+
+
+<div class="pagedate">
+Last edited <time datetime="2014-09-24T02:16:52Z">Wed Sep 24 02:16:52 2014</time>
+<!-- Created <time datetime="2014-09-24T02:16:52Z" pubdate="pubdate">Wed Sep 24 02:16:52 2014</time> -->
+</div>
+
+</nav>
+
+
+<script src="R%20for%20people%20who%20already%20know%20something%20about%20programming_files/application-cb286d6f677.html"></script><!-- Piwik --><script type="text/javascript">
+var pkBaseURL = (("https:" == document.location.protocol) ? "https://piwik.thomaslevine.com/" : "http://piwik.thomaslevine.com/");
+document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script type="text/javascript">
+try {
+var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 2);
+piwikTracker.trackPageView();
+piwikTracker.enableLinkTracking();
+} catch( err ) {}
+</script><noscript><p><img src="http://piwik.thomaslevine.com/piwik.php?idsite=2" style="border:0" alt="Piwik tracking image"></p></noscript>
+<!-- End Piwik Tracking Code -->
+
+
+<!-- from ~ -->
+</footer>
+
+</article>
+
+
+
+</body></html>
